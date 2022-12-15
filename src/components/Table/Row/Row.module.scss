@@ -1,0 +1,54 @@
+.rowHeader {
+  text-transform: uppercase;
+  color: rgb(25, 0, 255);
+  text-align: center;
+
+  &:nth-child(2) {
+    border-bottom: 3px solid gray;
+  }
+
+  .center {
+    padding: 20px;
+  }
+
+  & .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.rowBody {
+  &:nth-child(odd) {
+    background-color: rgba(189, 189, 189, 0.281);
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.timer {
+  background-color: rgba(255, 0, 0, 0.192);
+  color: red;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & span {
+    margin: 0 auto;
+  }
+}
+
+.currentPrice {
+  color: rgb(25, 0, 255);
+}
+
+.tax {
+  color: red;
+}
+
+.futurePrice {
+  color: green;
+}
